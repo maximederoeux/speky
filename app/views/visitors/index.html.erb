@@ -1,1 +1,7 @@
-index.html.erb
+Liste des utilisateurs<br>
+
+<% @users.each do |user| %>
+
+<%= user.email %><br>
+
+<% end %>
