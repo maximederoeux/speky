@@ -8,6 +8,8 @@
 <% end %>
 <% if user_signed_in? %>
   <li><%= link_to 'Users', users_path %></li>
+  <li><%= link_to 'Profile', user_path(current_user) %></li>
+  <li><%= link_to 'Modifier', edit_user_path(current_user) %></li>
 <% end %>
 </ul>
 
