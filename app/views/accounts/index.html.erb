@@ -1,0 +1,12 @@
+<% @accounts.each do |account| %>
+
+<%= account.id %>
+<%= account.resto_name %>
+<%= account.resto_mail %>
+<%= account.subdomain %>
+<%= account.user_id %>
+<%= link_to 'Show', account_path(account) %>
+<%= link_to 'Edit', edit_account_path(account) %>
+<%= link_to 'Destroy', account_path(account), method: :delete, data: { confirm: 'Are you sure?' } %><br>
+
+<% end %>
